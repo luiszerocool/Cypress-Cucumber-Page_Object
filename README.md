@@ -1,3 +1,19 @@
-# Cypress.io
+# Cypress
 
-Contiene proyectos de automatización desarrollados en Cypress.io
+Automation projects development in Cypress
+
+## Prerequsites
+
+- node js
+
+## Create Project
+```
+# install 
+npm install cypress
+
+# open
+npx cypress open
+
+# package.json init
+npm init
+```

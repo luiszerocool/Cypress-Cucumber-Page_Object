@@ -1,0 +1,17 @@
+{
+  "name": "cypress-report",
+  "version": "1.0.0",
+  "description": "- Node js",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^8.4.1",
+    "mochawesome": "^6.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "delete": "rm -rf cypress/results, mochawesome.json"
+  },
+  "author": "",
+  "license": "ISC"
+}
