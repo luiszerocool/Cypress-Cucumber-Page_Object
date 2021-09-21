@@ -1,20 +1,22 @@
 /// <reference types="cypress" />
 
-import * as Abrir from '../../screenplay/tasks/Abrir'
-import * as Ingresar from '../../screenplay/tasks/Ingresar'
-import * as RegistrarPago from '../../screenplay/tasks/RegistrarPago'
-import * as LaRespuesta from '../../screenplay/questions/LaRespuesta'
+import * as Open from '../../screenplay/tasks/Open'
+import * as Login from '../../screenplay/tasks/Login'
+import * as Logout from '../../screenplay/tasks/Logout'
+import * as Pay from '../../screenplay/tasks/Pay'
+import * as PaymentResponse from '../../screenplay/questions/PaymentResponse'
 
-describe('Screenplay - Add products to card and buy', () => {
-  it('should be able to add a product to the cart', () => {
-
+describe('Screenplay - Make Payment', () => {
+	
+  it('Make a correct payment of a bill', () => {
 	//task
-    Abrir.laPaginaDeInicio();
-	Ingresar.aLaPaginaDeUsuario();
-	RegistrarPago.enPagosDeFactura();
+    Open.theHomePage()
+	Login.toTheUserPageWith("john", "demo")
+	Pay.theBill()
 	//question
-	LaRespuesta.alRegistroDelPagoDeFacturaEs();
-
+	PaymentResponse.ofTheBillIs("Bill Payment Complete")
+	//task
+	Logout.fromApplication()
   });
 
 });

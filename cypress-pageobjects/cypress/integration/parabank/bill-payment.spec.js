@@ -1,18 +1,20 @@
 /// <reference types="cypress" />
 
-import LoginPage from "../../page_objects/LoginPage"
+import OverviewPage from "../../page_objects/OverviewPage"
 import BillPaymentsPage from "../../page_objects/BillPaymentsPage"
-import BasePage from "../../page_objects/BasePage"
+import HomePage from "../../page_objects/HomePage"
 
-const loginPage = new LoginPage
+const overviewPage = new OverviewPage
 const billPaymentsPage = new BillPaymentsPage
-const basePage = new BasePage
+const homePage = new HomePage
 
-describe("Bill Payment Test",()=>{
+describe("Page Object - Make Payment",()=>{
 
-    it("Pay a Bill",()=>{
-        loginPage.login()
+    it("Make a correct payment of a bill",()=>{
+        homePage.launchApplication()
+        homePage.login()
+        overviewPage.goToPay()
         billPaymentsPage.enterPayeeDetailsAndPay()
-        basePage.logOutFromApplication()
+        overviewPage.logOutFromApplication()
     })
 })

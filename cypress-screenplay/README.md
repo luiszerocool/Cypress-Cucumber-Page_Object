@@ -1,10 +1,25 @@
-# Cypress Page Objects
+# Cypress with Screenplay
 
-This project contains a sample code for Page Objects Design pattern in Cypress
+## Screenplay Structure
 
-## License
-
-This project is licensed under the MIT License - see [here](https://mit-license.org/) for details
-
-## Author
-Giridhar Rajkumar
+```
+cypress/
+    fixtures
+    integration/
+        <name_page>/
+            bill-payment.spec.js 
+    plugins
+    screenplay/
+        questions/
+            PaymentResponse.js
+        screen/
+            BillPaymentPage.js
+            HomePage.js
+            OverviewPage.js
+        task/
+            Login.js
+            Logout.js
+            Open.js
+            Pay.js
+    support
+```

@@ -1,10 +1,17 @@
-# Cypress Page Objects
+# Cypress with Page Objects
 
-This project contains a sample code for Page Objects Design pattern in Cypress
+## Page Objects Structure
 
-## License
-
-This project is licensed under the MIT License - see [here](https://mit-license.org/) for details
-
-## Author
-Giridhar Rajkumar
+```
+cypress/
+    fixtures
+    integration/
+        <name_page>/
+            bill-payment.spec.js 
+    plugins
+    page_objects/
+            BillPaymentPage.js
+            HomePage.js
+            OverviewPage.js
+    support
+```
