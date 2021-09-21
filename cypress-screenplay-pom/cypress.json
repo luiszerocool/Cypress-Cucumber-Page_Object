@@ -1,0 +1,16 @@
+{
+  "video": false,
+  "nodeVersion": "system",
+  "baseUrl": "https://repo-listing.web.app",
+  "testFiles": ["screenplay/**/**.spec.js", "page-objects/**/**.spec.js"],
+
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "results/reports-mochawesome",
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "quiet": true,
+    "charts": true
+  }
+}

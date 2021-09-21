@@ -1,0 +1,518 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 14,
+    "passes": 13,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-10-05T18:41:24.631Z",
+    "end": "2020-10-05T18:43:23.921Z",
+    "duration": 30970,
+    "testsRegistered": 14,
+    "passPercent": 92.85714285714286,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "220d06ef-5f59-4636-8239-a28f33cd6445",
+      "title": "",
+      "fullFile": "cypress/integration/screenplay/adicionar/adicionar.screenplay.spec.js",
+      "file": "cypress/integration/screenplay/adicionar/adicionar.screenplay.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "55f7f845-a06c-4bf0-993b-ec61bd829023",
+          "title": "Adicionar",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Adicionar repositório a lista",
+              "fullTitle": "Adicionar Adicionar repositório a lista",
+              "timedOut": null,
+              "duration": 2954,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _screenplay.quando)(usuario).tenta(_Tarefas.InserirNovoRepositorio);\n(0, _screenplay.entao)(usuario).deve(_Tarefas.ExibirLista);",
+              "err": {},
+              "uuid": "a3f0177b-a047-45ee-a616-ad87ea803b2a",
+              "parentUUID": "55f7f845-a06c-4bf0-993b-ec61bd829023",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Adicionar mais de um repositório a lista",
+              "fullTitle": "Adicionar Adicionar mais de um repositório a lista",
+              "timedOut": null,
+              "duration": 2376,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _screenplay.quando)(usuario).tenta(_Tarefas.InserirNovoRepositorio);\n(0, _screenplay.e)(usuario).tenta(_Tarefas.InserirNovoRepositorio);\n(0, _screenplay.e)(usuario).tenta(_Tarefas.InserirNovoRepositorio);\n(0, _screenplay.entao)(usuario).deve(_Tarefas.ExibirListaContendoTres);",
+              "err": {},
+              "uuid": "886e6554-b64e-4fe3-b1d6-b7bdd909247c",
+              "parentUUID": "55f7f845-a06c-4bf0-993b-ec61bd829023",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tentar adicionar sem informar nome",
+              "fullTitle": "Adicionar Tentar adicionar sem informar nome",
+              "timedOut": null,
+              "duration": 402,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _screenplay.quando)(usuario).tenta(_Tarefas.AdicionarValorVazio);\n(0, _screenplay.entao)(usuario).deve(_Tarefas.VisualizarListaVazia);",
+              "err": {},
+              "uuid": "006117df-acdf-494b-9e87-ce666dadac63",
+              "parentUUID": "55f7f845-a06c-4bf0-993b-ec61bd829023",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a3f0177b-a047-45ee-a616-ad87ea803b2a",
+            "886e6554-b64e-4fe3-b1d6-b7bdd909247c",
+            "006117df-acdf-494b-9e87-ce666dadac63"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5732,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "2e606136-dd16-4d35-a334-3474b6d4f3a9",
+      "title": "",
+      "fullFile": "cypress/integration/screenplay/remover/remover.screenplay.spec.js",
+      "file": "cypress/integration/screenplay/remover/remover.screenplay.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4304209b-1fb1-4caf-bb3a-215d9dff9d16",
+          "title": "Remover",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tentar limpar uma lista vazia",
+              "fullTitle": "Remover Tentar limpar uma lista vazia",
+              "timedOut": null,
+              "duration": 487,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dado(usuario).deve(AcessarHome);\nquando(usuario).tenta(LimparLista);\nentao(usuario).deve(VisualizarListaVazia);",
+              "err": {},
+              "uuid": "6aeafeab-5847-4fcd-8f63-759822550477",
+              "parentUUID": "4304209b-1fb1-4caf-bb3a-215d9dff9d16",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "3eea607e-6d0e-4302-9a67-61f9fdb27dfd",
+              "title": "Lista com items",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Remover um dos repositórios da lista",
+                  "fullTitle": "Remover Lista com items Remover um dos repositórios da lista",
+                  "timedOut": null,
+                  "duration": 6441,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "quando(usuario).tenta(RemoverItem);\nentao(usuario).deve(EsperarListaContendoDoisItens);",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying: Not enough elements found. Found '1', expected '2'.",
+                    "estack": "AssertionError: Timed out retrying: Not enough elements found. Found '1', expected '2'.\n    at EsperarListaContendoDoisItens.executaComo (https://repo-listing.web.app/__cypress/tests?p=cypress/integration/screenplay/remover/remover.screenplay.spec.js:1555:10)\n    at DadoQuandoEntao.composicaoDeTarefas (https://repo-listing.web.app/__cypress/tests?p=cypress/integration/screenplay/remover/remover.screenplay.spec.js:2602:25)\n    at DadoQuandoEntao.deve (https://repo-listing.web.app/__cypress/tests?p=cypress/integration/screenplay/remover/remover.screenplay.spec.js:2580:19)\n    at Context.eval (https://repo-listing.web.app/__cypress/tests?p=cypress/integration/screenplay/remover/remover.screenplay.spec.js:2227:22)",
+                    "diff": "- 1\n+ 2\n"
+                  },
+                  "uuid": "d0722bfd-301a-4d1a-b60a-81eab6cd3b89",
+                  "parentUUID": "3eea607e-6d0e-4302-9a67-61f9fdb27dfd",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Remover mais de um dos repositórios da lista",
+                  "fullTitle": "Remover Lista com items Remover mais de um dos repositórios da lista",
+                  "timedOut": null,
+                  "duration": 2618,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "quando(usuario).tenta(RemoverItem);\ne(usuario).tenta(RemoverItem);\nentao(usuario).deve(EsperarListaContendoUmItem);",
+                  "err": {},
+                  "uuid": "63c97f09-ba12-4906-8997-2dd09f3f75fd",
+                  "parentUUID": "3eea607e-6d0e-4302-9a67-61f9fdb27dfd",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Limpar a lista",
+                  "fullTitle": "Remover Lista com items Limpar a lista",
+                  "timedOut": null,
+                  "duration": 2680,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "quando(usuario).tenta(LimparLista);\nentao(usuario).deve(VisualizarListaVazia);",
+                  "err": {},
+                  "uuid": "94428f0d-a0dc-4aed-bc9b-d83e2ee9237b",
+                  "parentUUID": "3eea607e-6d0e-4302-9a67-61f9fdb27dfd",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "63c97f09-ba12-4906-8997-2dd09f3f75fd",
+                "94428f0d-a0dc-4aed-bc9b-d83e2ee9237b"
+              ],
+              "failures": [
+                "d0722bfd-301a-4d1a-b60a-81eab6cd3b89"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 11739,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "6aeafeab-5847-4fcd-8f63-759822550477"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 487,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b62bc4e1-37fc-4a5c-a3ce-a3c22ba65a64",
+      "title": "",
+      "fullFile": "cypress/integration/screenplay/adicionar/adicionar.screenplay.spec.js",
+      "file": "cypress/integration/screenplay/adicionar/adicionar.screenplay.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f6486b03-9e9d-4860-bf74-191418a4201c",
+          "title": "Adicionar",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Adicionar repositório a lista",
+              "fullTitle": "Adicionar Adicionar repositório a lista",
+              "timedOut": null,
+              "duration": 2337,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _screenplay.quando)(usuario).tenta(_Tarefas.InserirNovoRepositorio);\n(0, _screenplay.entao)(usuario).deve(_Tarefas.ExibirLista);",
+              "err": {},
+              "uuid": "d1141abc-f8a3-4ebb-854c-bfd6545f94b9",
+              "parentUUID": "f6486b03-9e9d-4860-bf74-191418a4201c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Adicionar mais de um repositório a lista",
+              "fullTitle": "Adicionar Adicionar mais de um repositório a lista",
+              "timedOut": null,
+              "duration": 2178,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _screenplay.quando)(usuario).tenta(_Tarefas.InserirNovoRepositorio);\n(0, _screenplay.e)(usuario).tenta(_Tarefas.InserirNovoRepositorio);\n(0, _screenplay.e)(usuario).tenta(_Tarefas.InserirNovoRepositorio);\n(0, _screenplay.entao)(usuario).deve(_Tarefas.ExibirListaContendoTres);",
+              "err": {},
+              "uuid": "7bee2e5c-62c6-4ddb-98bf-123957332fc3",
+              "parentUUID": "f6486b03-9e9d-4860-bf74-191418a4201c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tentar adicionar sem informar nome",
+              "fullTitle": "Adicionar Tentar adicionar sem informar nome",
+              "timedOut": null,
+              "duration": 366,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _screenplay.quando)(usuario).tenta(_Tarefas.AdicionarValorVazio);\n(0, _screenplay.entao)(usuario).deve(_Tarefas.VisualizarListaVazia);",
+              "err": {},
+              "uuid": "c07b1877-5bd6-4aa9-9be3-a0c036d8e412",
+              "parentUUID": "f6486b03-9e9d-4860-bf74-191418a4201c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d1141abc-f8a3-4ebb-854c-bfd6545f94b9",
+            "7bee2e5c-62c6-4ddb-98bf-123957332fc3",
+            "c07b1877-5bd6-4aa9-9be3-a0c036d8e412"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4881,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7a1eb614-63de-4a07-864d-3c2b6c123cbc",
+      "title": "",
+      "fullFile": "cypress/integration/screenplay/remover/remover.screenplay.spec.js",
+      "file": "cypress/integration/screenplay/remover/remover.screenplay.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "13967a03-6bb0-43f6-b552-e17f9084aab6",
+          "title": "Remover",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tentar limpar uma lista vazia",
+              "fullTitle": "Remover Tentar limpar uma lista vazia",
+              "timedOut": null,
+              "duration": 489,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dado(usuario).deve(AcessarHome);\nquando(usuario).tenta(LimparLista);\nentao(usuario).deve(VisualizarListaVazia);",
+              "err": {},
+              "uuid": "3fbfa5d5-5aa0-4124-b1c8-c0bdd90b88de",
+              "parentUUID": "13967a03-6bb0-43f6-b552-e17f9084aab6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "c7b6ff6a-9239-4652-b787-d8337f931581",
+              "title": "Lista com items",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Remover um dos repositórios da lista",
+                  "fullTitle": "Remover Lista com items Remover um dos repositórios da lista",
+                  "timedOut": null,
+                  "duration": 2528,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "quando(usuario).tenta(RemoverItem);\nentao(usuario).deve(EsperarListaContendoDoisItens);",
+                  "err": {},
+                  "uuid": "72cb17e2-9c1e-4ce0-a056-5b59bb42cc22",
+                  "parentUUID": "c7b6ff6a-9239-4652-b787-d8337f931581",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Remover mais de um dos repositórios da lista",
+                  "fullTitle": "Remover Lista com items Remover mais de um dos repositórios da lista",
+                  "timedOut": null,
+                  "duration": 2418,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "quando(usuario).tenta(RemoverItem);\ne(usuario).tenta(RemoverItem);\nentao(usuario).deve(EsperarListaContendoUmItem);",
+                  "err": {},
+                  "uuid": "df690715-35c0-4c7e-893e-ed9df4fc982c",
+                  "parentUUID": "c7b6ff6a-9239-4652-b787-d8337f931581",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Limpar a lista",
+                  "fullTitle": "Remover Lista com items Limpar a lista",
+                  "timedOut": null,
+                  "duration": 2696,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "quando(usuario).tenta(LimparLista);\nentao(usuario).deve(VisualizarListaVazia);",
+                  "err": {},
+                  "uuid": "36df5f98-d272-4db2-a582-6e4b685eb060",
+                  "parentUUID": "c7b6ff6a-9239-4652-b787-d8337f931581",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "72cb17e2-9c1e-4ce0-a056-5b59bb42cc22",
+                "df690715-35c0-4c7e-893e-ed9df4fc982c",
+                "36df5f98-d272-4db2-a582-6e4b685eb060"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 7642,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "3fbfa5d5-5aa0-4124-b1c8-c0bdd90b88de"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 489,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results/reports-mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "quiet": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
