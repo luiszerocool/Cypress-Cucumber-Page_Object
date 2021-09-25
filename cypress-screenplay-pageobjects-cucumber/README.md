@@ -55,7 +55,8 @@ cypress/
     fixtures
     integration/
         page_objects/
-            
+            logout.spec.js
+            pay.spec.js
         sreenplay/
             pay.stepdefinitions.js 
             logout.stepdefinitions.js
