@@ -47,27 +47,40 @@ add to `package.json` this:
   "nonGlobalStepDefinitions": true
 }
 ```
----------------------------------------------------------------------------
-add to `cypress/integration/google.feature` this:
+
+## Project Structure
+
 ```
-# Language: es
-# Author: Luis Vanegas <xlavm>
-Feature: Google Main Page
-  I want to open a search engine
-  @focus
-  Scenario: Opening a search engine page
-    Given I open Google page
-    Then I see "Google" in the title
-```
----------------------------------------------------------------------------
-add to `cypress/integration/google/google.spec.js` this:
-```js
-import { Given, Then } from "cypress-cucumber-preprocessor/steps";
-const url = 'https://google.com'
-Given('I open Google page', () => {
-  cy.visit(url)
-})
-Then(`I see {string} in the title`, (title) => {
-  cy.title().should('include', title)
-})
+cypress/
+    fixtures
+    integration/
+        page_objects/
+            
+        sreenplay/
+            pay.stepdefinitions.js 
+            logout.stepdefinitions.js
+        screenplay.feature
+        page_objects.feature
+    page_objects/
+        BillPaymentPage.js
+        HomePage.js
+        OverviewPage.js
+    plugins/
+        index.js
+    screenplay/
+        questions/
+            LogoutResponse.js
+            PayResponse.js
+        screen/
+            BillPaymentPage.js
+            HomePage.js
+            OverviewPage.js
+        task/
+            Login.js
+            Logout.js
+            Open.js
+            Pay.js
+    support/
+        commands.js
+        index.js
 ```
