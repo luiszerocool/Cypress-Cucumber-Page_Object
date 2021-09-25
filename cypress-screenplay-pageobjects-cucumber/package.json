@@ -1,0 +1,19 @@
+{
+  "name": "cypress-with-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cypress": "^8.4.1",
+    "cypress-cucumber-preprocessor": "^4.2.0"
+  },
+  "devDependencies": {},
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
