@@ -6,8 +6,9 @@
 cypress/
     fixtures
     integration/
-        <name_page>/
-            bill-payment.spec.js 
+        bill-pay/
+            logout.spec.js 
+            pay.spec.js 
     plugins
     page_objects/
             BillPaymentPage.js

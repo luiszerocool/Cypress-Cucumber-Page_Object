@@ -6,12 +6,14 @@
 cypress/
     fixtures
     integration/
-        <name_page>/
-            bill-payment.spec.js 
+        bill-pay/
+            logout.stepdefinitions.js 
+            pay.stepdefinitions.js 
     plugins
     screenplay/
         questions/
-            PaymentResponse.js
+            LogoutResponse.js
+            PayResponse.js
         screen/
             BillPaymentPage.js
             HomePage.js

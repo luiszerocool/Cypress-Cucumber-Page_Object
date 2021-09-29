@@ -6,10 +6,12 @@
 cypress/
     fixtures
     integration/
-        parabank-pageobjects/
-            bill-payment.spec.js 
-        parabank-sreenplay/
-            bill-payment.spec.js 
+        pageobjects/
+            logout.spec.js 
+            pay.spec.js 
+        sreenplay/
+            logout.stepdefinitions.js 
+            pay.stepdefinitions.js 
     page_objects/
         BillPaymentPage.js
         HomePage.js
@@ -17,7 +19,8 @@ cypress/
     plugins
     screenplay/
         questions/
-            PaymentResponse.js
+            LogoutResponse.js
+            PayResponse.js
         screen/
             BillPaymentPage.js
             HomePage.js

@@ -1,14 +1,14 @@
 {
-  "name": "cypress-pageobjects",
+  "name": "cypress",
   "version": "1.0.0",
-  "description": "cypress with page objects patterns",
   "author": "Luis Angel Vanegas Martinez",
   "license": "ISC",
+  "description": "automation project native in cypress",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "Dependencies": {
-    "cypress": "^4.7.0"
+  "dependencies": {
+    "cypress": "^8.5.0"
   }
 }

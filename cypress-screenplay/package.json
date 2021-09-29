@@ -1,14 +1,14 @@
 {
-  "name": "cypress-pageobjects",
+  "name": "cypress-screenplay",
   "version": "1.0.0",
-  "description": "",
+  "author": "Luis Angel Vanegas Martinez",
+  "license": "ISC",
+  "description": "cypress with screenplay",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
+  "Dependencies": {
     "cypress": "^4.8.0"
   }
 }

@@ -3,8 +3,9 @@ import * as BillPaymentsPage from '../screen/BillPaymentsPage';
 import * as OverviewPage from '../screen/OverviewPage';
 
 export function theBill(){
+        
 	cy.get(OverviewPage.BILL_PAY_LINK).click()
-        // form
+
         cy.get(BillPaymentsPage.FIRSTNAME_FIELD).type("Automation")
         cy.get(BillPaymentsPage.ADDRESS_FIELD).type("London")
         cy.get(BillPaymentsPage.CITY_FIELD).type("Greater London")
