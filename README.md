@@ -17,3 +17,29 @@ npx cypress open
 # package.json init
 npm init
 ```
+
+## desktop version test
+
+Add in the `cypress.json` file:
+
+```JSON
+{
+    "viewportWidth": 1360,
+    "viewportHeight": 768
+}
+```
+
+## Errors Solutions
+
+> The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+### Solución: 
+
+Add in the `support/index.js` file:
+
+```js
+import './commands'
+Cypress.on('uncaught:exception', (err, runnable) => {
+  // returning false here prevents Cypress from failing the test
+  return false
+})
+```
