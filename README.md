@@ -18,6 +18,15 @@ npx cypress open
 npm init
 ```
 
+## timeouts 
+
+* Global timeout in `cypress.json`:
+```JSON
+{
+  "defaultCommandTimeout":10000
+}
+```
+
 ## desktop version test
 
 Add in the `cypress.json` file:
